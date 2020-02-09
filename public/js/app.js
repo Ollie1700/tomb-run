@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2112,11 +2112,13 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+console.log('[bootstrap.js:1] Hello Laravel');
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
+
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /**
@@ -2135,14 +2137,26 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ 1:
-/*!***********************************!*\
-  !*** multi ./resources/js/app.js ***!
-  \***********************************/
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 0:
+/*!*************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Oliver\Desktop\speedrun-project\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\Oliver\Desktop\speedrun-project\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Oliver\Desktop\speedrun-project\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

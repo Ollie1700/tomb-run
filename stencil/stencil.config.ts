@@ -4,8 +4,7 @@ export const config: Config = {
   namespace: 'stencil',
   outputTargets: [
     {
-      type: 'dist',
-      esmLoaderPath: '../loader'
+      type: 'www',
     },
     {
       type: 'docs-readme'
