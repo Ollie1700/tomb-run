@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mx = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +11,6 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mx.js('stencil/dist/index.mjs', 'public/js')
+  .js('resources/js/app.js', 'public/js')
+  .sass('resources/sass/app.scss', 'public/css');
