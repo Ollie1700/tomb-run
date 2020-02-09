@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mx = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +11,10 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mx
+  // Copy Stencil build into resources
+  .copyDirectory('stencil/www/build', 'public/js/stencil')
+
+  // Build all JS and CSS
+  .js('resources/js/app.js', 'public/js')
+  .sass('resources/sass/app.scss', 'public/css')
