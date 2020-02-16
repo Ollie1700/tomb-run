@@ -13,6 +13,26 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('/v1')->group(function () {
+
+    // GAMES
+    Route::get('/games', function () {
+        return App\Models\Game::all();
+    });
+
+    // RUNS
+    Route::get('/runs', function () {
+        return App\Models\Run::all();
+    });
+
+    // STRATEGIES
+    Route::get('/strategies', function () {
+        return App\Models\Strategy::all();
+    });
+
+    // RTAs
+    Route::get('/rtas', function () {
+        return App\Models\RTA::all();
+    });
+
 });

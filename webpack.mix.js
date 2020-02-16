@@ -12,7 +12,7 @@ const mx = require('laravel-mix');
  */
 
 mx
-  // Copy Stencil build into resources
+  // Copy Stencil build into public
   .copyDirectory('stencil/www/build', 'public/js/stencil')
 
   // Build all JS and CSS
