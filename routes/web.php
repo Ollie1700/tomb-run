@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return Inertia\Inertia::render('Test', [
+        'run' => App\Models\Run::all()
+    ]);
 });

@@ -18,3 +18,6 @@ mx
   // Build all JS and CSS
   .js('resources/js/app.js', 'public/js')
   .sass('resources/sass/app.scss', 'public/css')
+
+  // Cache busting
+  .version()
